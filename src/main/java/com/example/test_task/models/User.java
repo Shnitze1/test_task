@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Instant;
+
 @Entity
 @Table(name = "users")
 @Getter
@@ -22,4 +24,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String userName;
+
+    private Instant authDate;
+    private Instant updateDate;
 }
